@@ -223,7 +223,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:background="@drawable/btn_darkblue"
+                android:background="@drawable/button_background"
                 android:text="We Go 시작하기"
                 android:textSize="17dp"
                 app:backgroundTint="@null"

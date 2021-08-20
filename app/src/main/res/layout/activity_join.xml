@@ -5,14 +5,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".DashboardActivity">
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <EditText
         android:id="@+id/jo_id"
         android:layout_width="210dp"
         android:layout_height="44dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="200dp"
-        android:layout_marginEnd="8dp"
+        android:layout_gravity="center"
+        android:gravity="center"
         android:ems="10"
         android:hint="프로젝트 명"
         android:inputType="textPersonName"
@@ -66,5 +67,5 @@
         app:layout_constraintEnd_toEndOf="@+id/jo_number"
         app:layout_constraintStart_toStartOf="@+id/jo_number"
         app:layout_constraintTop_toBottomOf="@+id/jo_number" />
-
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
