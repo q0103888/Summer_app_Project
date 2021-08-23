@@ -7,19 +7,26 @@
     tools:context=".DashboardActivity">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="10dp">
+        <ImageView
+            android:id="@+id/et_logo"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_margin="20dp"
+            android:foregroundGravity="center"
+            android:src="@drawable/logo_transparent"
+            tools:ignore="MissingConstraints" />
     <EditText
         android:id="@+id/jo_id"
         android:layout_width="210dp"
-        android:layout_height="44dp"
-        android:layout_gravity="center"
-        android:gravity="center"
+        android:layout_height="40dp"
         android:ems="10"
         android:hint="프로젝트 명"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:inputType="textPersonName" />
     <EditText
         android:id="@+id/jo_pass"
         android:layout_width="wrap_content"
@@ -59,13 +66,14 @@
 
     <Button
         android:id="@+id/jo_register"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
         android:layout_marginTop="16dp"
         android:text="프로젝트 생성"
         app:backgroundTint="#6799FF"
         app:layout_constraintEnd_toEndOf="@+id/jo_number"
         app:layout_constraintStart_toStartOf="@+id/jo_number"
         app:layout_constraintTop_toBottomOf="@+id/jo_number" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
