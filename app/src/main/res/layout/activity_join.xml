@@ -20,62 +20,18 @@
             android:foregroundGravity="center"
             android:src="@drawable/logo_transparent"
             tools:ignore="MissingConstraints" />
-    <EditText
-        android:id="@+id/jo_id"
-        android:layout_width="210dp"
-        android:layout_height="40dp"
-        android:ems="10"
-        android:hint="프로젝트 명"
-        android:inputType="textPersonName" />
-    <EditText
-        android:id="@+id/jo_pass"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:hint="참여인원"
-        android:inputType="textPassword"/>
-
-    <EditText
-        android:id="@+id/jo_email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:hint="프로젝트 개요"
-        android:inputType="textPersonName"/>
-
-    <EditText
-        android:id="@+id/jo_number"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:hint="기대효과"
-        android:inputType="textPersonName" />
-
-
-
-    <Button
-        android:id="@+id/jo_register"
-        android:layout_width="150dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="16dp"
-        android:text="프로젝트 생성"
-        app:backgroundTint="#6799FF" />
 
     <com.google.android.material.textfield.TextInputLayout
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:id="@+id/textInputLayout"
-        android:layout_width="match_parent"
+        android:id="@+id/textInputLayout1"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
-        android:layout_marginTop="15dp"
         android:layout_marginEnd="32dp"
         android:layout_gravity="center"
         android:hint="Name"
-        app:helperText="Required*"
+        app:helperText="Max Name"
         app:counterEnabled="true"
         app:counterMaxLength="20"
         app:endIconMode="clear_text"
@@ -86,21 +42,35 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <!--여기에 프로젝트 이름 ID-->
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/textIputEditText"
+            android:id="@+id/jo_id"
             android:maxLength="20"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
     </com.google.android.material.textfield.TextInputLayout>
+        <RelativeLayout
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_gravity="center">
+        <Spinner
+            android:id="@+id/spinner_month"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:entries="@array/Singup_month"
+            android:layout_marginLeft="130dp"/>
+        </RelativeLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:id="@+id/textInputLayout2"
-            android:layout_width="match_parent"
+            android:layout_width="320dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
             android:layout_marginLeft="32dp"
-            android:layout_marginTop="15dp"
             android:layout_marginEnd="32dp"
             android:layout_gravity="center"
             android:hint="PassWord"
@@ -114,12 +84,80 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
-
+            <!--여기에 조 개요-->
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/textIputEditText2"
+                android:id="@+id/jo_pass"
                 android:maxLength="20"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
         </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/textInputLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="32dp"
+            android:layout_gravity="center"
+            android:hint="Name"
+            app:helperText="Required*"
+            app:counterEnabled="true"
+            app:counterMaxLength="20"
+            app:endIconMode="clear_text"
+            app:helperTextTextColor="@color/main_color"
+            app:startIconDrawable="@drawable/icon_people"
+            android:layout_marginRight="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <!--여기에 조원 E-mail-->
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/jo_email"
+                android:maxLength="20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/textInputLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="32dp"
+            android:layout_gravity="center"
+            android:hint="Name"
+            app:helperText="Required*"
+            app:counterEnabled="true"
+            app:counterMaxLength="20"
+            app:endIconMode="clear_text"
+            app:helperTextTextColor="@color/main_color"
+            app:startIconDrawable="@drawable/icon_people"
+            android:layout_marginRight="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <!--여기에 프로젝트 이름 ID-->
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/jo_number"
+                android:maxLength="20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/jo_register"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="16dp"
+            android:text="프로젝트 생성"
+            app:backgroundTint="#6799FF"
+            android:layout_gravity="center"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
