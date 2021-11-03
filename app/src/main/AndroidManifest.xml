@@ -9,11 +9,13 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
 
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
     <application
         android:usesCleartextTraffic="true"
         android:allowBackup="true"
-        android:icon="@drawable/set"
-        android:label="@string/app_name"
+        android:icon="@drawable/logo_transparent"
+        android:label="WeGo"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TeamProjectt" >
@@ -30,10 +32,16 @@
         </activity>
         <activity android:name=".LoginActivity" />
         <activity android:name=".RegisterActivity" />
+        <activity android:name=".MainFragment" />
         <activity android:name=".HomeActivity" />
-        <activity android:name=".CompletedActivity" />
+        <activity android:name=".HomeActivity2" />
         <activity android:name=".DashboardActivity" />
         <activity android:name=".Dashboardfinal" />
+        <activity android:name=".Dashboardfinal2" />
+        <activity android:name=".IngActivity" />
+        <activity android:name=".CompletedActivity" />
+        <activity android:name="SnsActivity" />
+        <activity android:name=".ChatActivity" />
     </application>
 
 </manifest>

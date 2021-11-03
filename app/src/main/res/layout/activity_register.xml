@@ -18,7 +18,7 @@
             android:paddingLeft="30dp"
             android:paddingTop="16dp"
             android:paddingRight="30dp"
-            android:background="@color/rabender">
+            >
             // 회원가입
 
             <ImageView
@@ -45,7 +45,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:hint="Name"
+                android:hint="성함을 입력하세요"
                 android:inputType="textPersonName"
                 app:layout_constraintEnd_toEndOf="@+id/et_pass"
                 app:layout_constraintStart_toStartOf="@+id/et_pass"
@@ -180,6 +180,15 @@
                 app:layout_constraintStart_toStartOf="@+id/et_name"
                 app:layout_constraintTop_toBottomOf="@+id/et_name" />
 
+            <TextView
+                android:id="@+id/tv_error_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FF0000"
+                app:layout_constraintStart_toStartOf="@id/et_email"
+                app:layout_constraintTop_toBottomOf="@+id/et_email"
+                app:layout_constraintEnd_toEndOf="@+id/et_email"
+                tools:text="테스트 " />
 
             <TextView
                 android:layout_width="match_parent"
