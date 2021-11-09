@@ -4,7 +4,8 @@ import android.content.Intent;
         import android.os.Bundle;
         import android.text.method.HideReturnsTransformationMethod;
         import android.text.method.PasswordTransformationMethod;
-        import android.view.View;
+import android.view.Gravity;
+import android.view.View;
         import android.widget.Button;
         import android.widget.CheckBox;
         import android.widget.CompoundButton;
@@ -36,7 +37,6 @@ public class LoginActivity extends AppCompatActivity {
                 super.onCreate(savedInstanceState);
                 setContentView(R.layout.activity_login);
 
-                et_jin = findViewById(R.id.et_jin);
                 et_id = findViewById(R.id.et_id);
                 et_pass = findViewById(R.id.et_pass);
                 btn_login = findViewById(R.id.btn_login);
@@ -83,8 +83,16 @@ public class LoginActivity extends AppCompatActivity {
                                                                 String userID = jsonObject.getString("userID");
                                                                 String userPass = jsonObject.getString("userPassword");
 
-                                                                Toast.makeText(getApplicationContext(), "로그인에 성공하였습니다.", Toast.LENGTH_SHORT).show();
+
+                                                                Toast toast = Toast.makeText(getApplicationContext(), et_id.getText()+" 님 환영합니다", Toast.LENGTH_LONG);
+//                                                                Toast.makeText(getApplicationContext(), et_id.getText()+" 님 환영합니다", Toast.LENGTH_LONG).show();
+//                                                                toast.setGravity(Gravity.BOTTOM, 0, 0);
+                                                                toast.show();
+
+
+
                                                                 Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+
                                                                 intent.putExtra("userID", userID);
                                                                 intent.putExtra("userPass", userPass);
                                                                 startActivity(intent);

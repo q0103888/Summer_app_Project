@@ -6,7 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -17,8 +17,10 @@ import org.jetbrains.annotations.NotNull;
 public class HomeFragment extends Fragment {
 
     private View view;
-    private Button MainButton, MainButton2;
-    private ImageView imageView;
+    private Button btn_edit, mylist;
+    private TextView tv_id;
+
+    // 내일 메인화면에 아이디값 띄어주는걸로
 
     // Ctrl + o
 
@@ -33,11 +35,10 @@ public class HomeFragment extends Fragment {
         view = inflater.inflate(R.layout.fragment_home, container, false);
         // fragment_home.xml 소환 
 
-        MainButton = view.findViewById(R.id.MainButton);
-        MainButton2 = view.findViewById(R.id.MainButton2);
-        // 해당 xml 안에 있는 Button 객체 생성
-        
-        MainButton.setOnClickListener(new View.OnClickListener() {
+        btn_edit = view.findViewById(R.id.btn_edit);
+        mylist = view.findViewById(R.id.mylist);
+
+        btn_edit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), HomeActivity.class);
@@ -45,16 +46,13 @@ public class HomeFragment extends Fragment {
             }
         });
 
-
-        MainButton2.setOnClickListener(new View.OnClickListener() {
+        mylist.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), CompletedActivity.class);
+                Intent intent = new Intent(getActivity(), HomeActivity2.class);
                 startActivity(intent);
             }
         });
-        // 해당 Button 이벤트 객체 생성
-
 
 
         return view;

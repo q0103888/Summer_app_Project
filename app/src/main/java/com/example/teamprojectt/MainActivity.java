@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -24,18 +26,18 @@ public class MainActivity extends AppCompatActivity {
     private HomeFragment HomeFragment;
     private DashboardFragment DashboardFragment;
     private NotificationsFragment NotificationsFragment;
+    private SnsFragment SnsFragment;
 
 
     private Button Button,Button2;
+    private TextView tv_id;
 
+    // 노트북과 깃허브 및 녹스 연동 성공 !
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {    // 액티비티 시작시 처음으로 실행
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
-
 
 
         // 객체들을 생성
@@ -55,6 +57,8 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.navigation_notifications:
                         setFrag(2);
                         break;
+                    case R.id.navigation_sns:
+                        setFrag(3);
                 }
                 return true;
             }
@@ -64,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
         HomeFragment = new HomeFragment();
         DashboardFragment = new DashboardFragment();
         NotificationsFragment = new NotificationsFragment();
+        SnsFragment =  new SnsFragment();
 
         // 처음 진입할시 (첫화면) 설정
         setFrag(0);   // case 0 번째에 해당하는 화면으로
@@ -89,8 +94,26 @@ public class MainActivity extends AppCompatActivity {
                 ft.replace(R.id.main_frame, NotificationsFragment);
                 ft.commit();
                 break;
+            case 3:
+                ft.replace(R.id.main_frame, SnsFragment);
+                ft.commit();
+                break;
         }
 
+
+    }
+
+    private long lastTimeBackPressed;
+
+
+    @Override
+    public void onBackPressed() {
+        if (System.currentTimeMillis() - lastTimeBackPressed < 1500) {
+            finish();
+            return;
+        }
+        Toast.makeText(this, "'뒤로' 버튼을 한 번 더 눌러 종료합니다.", Toast.LENGTH_SHORT).show();
+        lastTimeBackPressed = System.currentTimeMillis();
 
     }
 
