@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
@@ -49,10 +50,12 @@
         android:id="@+id/reg_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="등록하기"
-        android:textColor="#FFFFFF"
         android:layout_marginTop="10dp"
-        android:backgroundTint="@color/logo"/>
+        android:background="@drawable/btn_singup"
+        android:backgroundTint="@null"
+        android:text="등록하기"
+        android:textColor="@color/black"
+        app:backgroundTint="@null" />
 
 
 </LinearLayout>

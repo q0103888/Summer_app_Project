@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="15dp"
+    android:padding="10dp">
+
+
+    // JOIN 테이블의 모든 항목을 표시할 레이아웃
+    // 즉, activity_mypage2.xml 내 RecyclerView 를 나타내는 리스트
+    // id = listView_main_list
+
+    // 항목번호
+    <TextView
+        android:id="@+id/textView_list_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="5dp"
+        android:padding="5dp" />
+
+
+    // 유저 아이디
+    <TextView
+        android:id="@+id/textView_list_idUser"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:layout_margin="5dp"
+        android:padding="5dp" />
+
+    // 프로젝트 이름
+    <TextView
+        android:id="@+id/textView_list_projectName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:layout_margin="5dp"
+        android:padding="5dp" />
+
+    // 이메일
+    <TextView
+        android:id="@+id/textView_list_eMail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:layout_margin="5dp"
+        android:padding="5dp" />
+
+    // 폰번호
+    <TextView
+        android:id="@+id/textView_list_phoneNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:layout_margin="5dp"
+        android:padding="5dp" />
+
+</LinearLayout>

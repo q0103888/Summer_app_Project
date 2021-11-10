@@ -44,36 +44,40 @@
         <entry key="..\:/2021-SummerVacation-TeamProject/app/src/main/res/layout/other_msgbox.xml" value="0.4466666666666667" />
         <entry key="..\:/2021-SummerVacation-TeamProject/app/src/main/res/layout/recycler_item.xml" value="0.3333333333333333" />
         <entry key="..\:/2021-SummerVacation-TeamProject/app/src/main/res/menu/bottom_nav_menu.xml" value="0.14895833333333333" />
-        <entry key="..\:/Users/LHH/AndroidStudioProjects/2021-SummerVacation-TeamProject-master/app/src/main/res/layout/activity_chat.xml" value="0.1671195652173913" />
-        <entry key="..\:/Users/LHH/AndroidStudioProjects/2021-SummerVacation-TeamProject-master/app/src/main/res/layout/activity_join.xml" value="0.11550151975683891" />
-        <entry key="..\:/Users/LHH/AndroidStudioProjects/2021-SummerVacation-TeamProject-master/app/src/main/res/layout/activity_splashscreen.xml" value="0.13858695652173914" />
-        <entry key="..\:/Users/LHH/AndroidStudioProjects/2021-SummerVacation-TeamProject-master/app/src/main/res/layout/my_msgbox.xml" value="0.2" />
-        <entry key="..\:/Users/LHH/AndroidStudioProjects/2021-SummerVacation-TeamProject-master/app/src/main/res/layout/mypage2_list.xml" value="0.1671195652173913" />
-        <entry key="..\:/Users/LHH/AndroidStudioProjects/2021-SummerVacation-TeamProject-master/app/src/main/res/layout/other_msgbox.xml" value="0.1671195652173913" />
+        <entry key="..\:/Users/LHH/AndroidStudioProjects/2021-SummerVacation-TeamProject-master/app/src/main/res/layout/activity_chat.xml" value="0.16168478260869565" />
         <entry key="..\:/Users/LHH/Desktop/2021-SummerVacation-TeamProject-master/app/src/main/res/drawable/back_et_mymsgbox.xml" value="0.2578125" />
         <entry key="..\:/Users/LHH/Desktop/2021-SummerVacation-TeamProject-master/app/src/main/res/drawable/back_et_name.xml" value="0.26979166666666665" />
         <entry key="..\:/Users/LHH/Desktop/2021-SummerVacation-TeamProject-master/app/src/main/res/drawable/btn_dark.xml" value="0.2578125" />
         <entry key="..\:/Users/LHH/Desktop/2021-SummerVacation-TeamProject-master/app/src/main/res/drawable/btn_darkblue.xml" value="0.26979166666666665" />
         <entry key="..\:/Users/LHH/Desktop/2021-SummerVacation-TeamProject-master/app/src/main/res/drawable/btn_singup.xml" value="0.26979166666666665" />
+        <entry key="..\:/Users/LHH/Desktop/2021-SummerVacation-TeamProject-master/app/src/main/res/drawable/edit.xml" value="0.26979166666666665" />
         <entry key="..\:/Users/LHH/Desktop/2021-SummerVacation-TeamProject-master/app/src/main/res/layout/activity_chat.xml" value="0.264" />
-        <entry key="..\:/Users/LHH/Desktop/2021-SummerVacation-TeamProject-master/app/src/main/res/layout/activity_complete.xml" value="0.11752786220871327" />
-        <entry key="..\:/Users/LHH/Desktop/2021-SummerVacation-TeamProject-master/app/src/main/res/layout/activity_final.xml" value="0.16032608695652173" />
-        <entry key="..\:/Users/LHH/Desktop/2021-SummerVacation-TeamProject-master/app/src/main/res/layout/activity_final2.xml" value="0.16032608695652173" />
+        <entry key="..\:/Users/LHH/Desktop/2021-SummerVacation-TeamProject-master/app/src/main/res/layout/activity_complete.xml" value="0.264" />
+        <entry key="..\:/Users/LHH/Desktop/2021-SummerVacation-TeamProject-master/app/src/main/res/layout/activity_final.xml" value="0.264" />
+        <entry key="..\:/Users/LHH/Desktop/2021-SummerVacation-TeamProject-master/app/src/main/res/layout/activity_final2.xml" value="0.264" />
         <entry key="..\:/Users/LHH/Desktop/2021-SummerVacation-TeamProject-master/app/src/main/res/layout/activity_final3.xml" value="0.264" />
         <entry key="..\:/Users/LHH/Desktop/2021-SummerVacation-TeamProject-master/app/src/main/res/layout/activity_ing.xml" value="0.2269021739130435" />
         <entry key="..\:/Users/LHH/Desktop/2021-SummerVacation-TeamProject-master/app/src/main/res/layout/activity_join.xml" value="0.264" />
+        <entry key="..\:/Users/LHH/Desktop/2021-SummerVacation-TeamProject-master/app/src/main/res/layout/activity_list_item.xml" value="0.264" />
+        <entry key="..\:/Users/LHH/Desktop/2021-SummerVacation-TeamProject-master/app/src/main/res/layout/activity_listcomplete.xml" value="0.22282608695652173" />
+        <entry key="..\:/Users/LHH/Desktop/2021-SummerVacation-TeamProject-master/app/src/main/res/layout/activity_listtest.xml" value="0.264" />
         <entry key="..\:/Users/LHH/Desktop/2021-SummerVacation-TeamProject-master/app/src/main/res/layout/activity_login.xml" value="0.264" />
         <entry key="..\:/Users/LHH/Desktop/2021-SummerVacation-TeamProject-master/app/src/main/res/layout/activity_main.xml" value="0.2" />
-        <entry key="..\:/Users/LHH/Desktop/2021-SummerVacation-TeamProject-master/app/src/main/res/layout/activity_mypage.xml" value="0.2" />
-        <entry key="..\:/Users/LHH/Desktop/2021-SummerVacation-TeamProject-master/app/src/main/res/layout/activity_mypage2.xml" value="0.16032608695652173" />
+        <entry key="..\:/Users/LHH/Desktop/2021-SummerVacation-TeamProject-master/app/src/main/res/layout/activity_mypage.xml" value="0.264" />
+        <entry key="..\:/Users/LHH/Desktop/2021-SummerVacation-TeamProject-master/app/src/main/res/layout/activity_mypage2.xml" value="0.4" />
         <entry key="..\:/Users/LHH/Desktop/2021-SummerVacation-TeamProject-master/app/src/main/res/layout/activity_register.xml" value="0.264" />
         <entry key="..\:/Users/LHH/Desktop/2021-SummerVacation-TeamProject-master/app/src/main/res/layout/activity_sns.xml" value="0.4" />
         <entry key="..\:/Users/LHH/Desktop/2021-SummerVacation-TeamProject-master/app/src/main/res/layout/activity_splashscreen.xml" value="0.264" />
+        <entry key="..\:/Users/LHH/Desktop/2021-SummerVacation-TeamProject-master/app/src/main/res/layout/activity_user.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/LHH/Desktop/2021-SummerVacation-TeamProject-master/app/src/main/res/layout/fragment_dashboard.xml" value="0.264" />
-        <entry key="..\:/Users/LHH/Desktop/2021-SummerVacation-TeamProject-master/app/src/main/res/layout/fragment_home.xml" value="0.16032608695652173" />
+        <entry key="..\:/Users/LHH/Desktop/2021-SummerVacation-TeamProject-master/app/src/main/res/layout/fragment_home.xml" value="0.264" />
         <entry key="..\:/Users/LHH/Desktop/2021-SummerVacation-TeamProject-master/app/src/main/res/layout/fragment_notifications.xml" value="0.2" />
+        <entry key="..\:/Users/LHH/Desktop/2021-SummerVacation-TeamProject-master/app/src/main/res/layout/fragment_sns.xml" value="0.24818840579710144" />
+        <entry key="..\:/Users/LHH/Desktop/2021-SummerVacation-TeamProject-master/app/src/main/res/layout/my_msgbox.xml" value="0.2128623188405797" />
         <entry key="..\:/Users/LHH/Desktop/2021-SummerVacation-TeamProject-master/app/src/main/res/layout/mypage2_list.xml" value="0.16032608695652173" />
         <entry key="..\:/Users/LHH/Desktop/2021-SummerVacation-TeamProject-master/app/src/main/res/layout/notice.xml" value="0.264" />
+        <entry key="..\:/Users/LHH/Desktop/2021-SummerVacation-TeamProject-master/app/src/main/res/layout/other_msgbox.xml" value="0.4" />
+        <entry key="..\:/Users/LHH/Desktop/2021-SummerVacation-TeamProject-master/app/src/main/res/layout/recycler_item.xml" value="0.24818840579710144" />
       </map>
     </option>
   </component>

@@ -14,38 +14,29 @@ import androidx.fragment.app.Fragment;
 
 import org.jetbrains.annotations.NotNull;
 
-public class NotificationsFragment extends Fragment {
+public class SnsFragment extends Fragment {
 
-    private View view;
-    private Button DashboardButton;
-
-
-    // Ctrl + o
-
+    private Button et_sns;
 
     @Nullable
     @org.jetbrains.annotations.Nullable
     @Override
     public View onCreateView(@NonNull @NotNull LayoutInflater inflater, @Nullable @org.jetbrains.annotations.Nullable ViewGroup container, @Nullable @org.jetbrains.annotations.Nullable Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.fragment_notifications,container,false);
-        // home layout 과 연결
+        View view = inflater.inflate(R.layout.fragment_sns, container, false);
 
-        // 수정 및 저장버튼
-        DashboardButton = view.findViewById(R.id.DashboardButton);
-        // 해당 xml 안에 있는 Button 객체 생성
+        et_sns = view.findViewById(R.id.et_sns);
 
-        DashboardButton.setOnClickListener(new View.OnClickListener() {
+        et_sns.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), DashboardActivity.class);
+                Intent intent = new Intent(getActivity(), SnsActivity.class);
                 startActivity(intent);
             }
         });
 
-
-
-
-
         return view;
     }
+
 }
+
+
